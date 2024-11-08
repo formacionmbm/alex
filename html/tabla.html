@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        function miFuncion(mensaje) {
+            alert(mensaje);
+            console.log(mensaje);
+            let Nombre = "Juan";
+            console.log("Le he cambiado el nombre a " + Nombre);
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" onclick="alert=miFuncion('Pulsa F12')">
+
+            <label for="fnacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fnacimiento" id="fnacimiento" required>
+
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" />
+
+            <label for="Telefono">Telefono</label>
+            <input type="number" name="Telefono" id="Telefono" required />
+        </fieldset>
+
+        <fieldset>
+            <label for="Curso">Cursos</label>
+
+            <select name="Curso" id="Curso">
+                <option value="0">Selecicionar</option>
+                <option value="1">Agua</option>
+                <option value="2">Tierra</option>
+                <option value="3">Viento</option>
+                <option value="4">Fuego</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+    <table>
+        <tr>
+            <th>Tabla</th>
+            <td>Primero</td>
+        </tr>
+        <tr>
+            <td>Segundo</td>
+            <td><button type="submit">Enviar</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
